@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shaya.sgcapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Authentication">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UI.Main2Activity" />
+        <activity
+            android:name=".UI.SetProfile"
+            android:parentActivityName=".UI.Main2Activity" />
+        <activity
+            android:name=".UI.AddContact"
+            android:parentActivityName=".UI.Main2Activity" />
+        <activity android:name=".UI.UsersProfileActivity" />
+        <activity android:name=".GroupChat" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".Chat" />
+        <activity android:name=".UI.Settings" />
+        <activity android:name=".UI.GroupMemberSelection" />
+        <activity android:name=".UI.GroupSettings" />
+        <activity android:name=".UI.DeleteGroupMembers" />
+        <activity android:name=".UI.AddGroupMembers" />
+        <activity android:name=".UI.GroupSettingsAdvance" />
+        <activity android:name=".Safasf1"></activity>
+    </application>
+
+</manifest>
